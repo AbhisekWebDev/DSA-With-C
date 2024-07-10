@@ -1,18 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct node{
+struct node {
 
     int data;
-
     struct node *next;
+} *head = NULL, *newNode, *temp;
 
-} *head = 0, *newNode, *temp ;
+int choice = 1;
 
-int choice = 1, count = 0;
-
-int main()
-{
+int main() {
 
     printf("Implementation of circular linked list \n");
 
@@ -23,47 +20,48 @@ int main()
     return 0;
 }
 
-void create(){
+void create() {
 
-    while(choice){
+    while(choice) {
 
         newNode = (struct node*)malloc(sizeof(struct node));
+        printf("Enter data: ");
+        scanf("%d", &newNode->data);
+        newNode->next = NULL;
 
-        printf("Enter data : ");
-        scanf("%d", &newNode -> data);
+        if(head == NULL) {
 
-        newNode -> next = 0;
-
-        if(head == 0){
-
-            head = temp = newNode;
+            head = newNode;
+            newNode->next = head; // Point to itself for circular linked list
         } else {
 
-            temp -> next = newNode;
-            temp = newNode;
-            temp -> next = head;
+            temp->next = newNode;
+            newNode->next = head; // Maintain circular linked list
         }
 
-        printf("0 to abort & 1 to continue (0, 1) \n");
+        temp = newNode; // Update temp to the new node
+
+        printf("0 to abort & 1 to continue (0, 1): ");
         scanf("%d", &choice);
     }
 }
 
-void display(){
+void display() {
+
+    if(head == NULL) {
+        printf("List is empty\n");
+        return;
+    }
 
     temp = head;
-
+    int count = 0; // Reset count for each display
     printf("Entered data: ");
 
-    while(temp -> next != head){
-
-        printf("%d", temp -> data);
-
-        temp = temp -> next;
-
+    do {
+        printf("%d ", temp->data);
+        temp = temp->next;
         count++;
-    }
+    }while(temp != head);
 
     printf("\nTotal number of nodes: %d\n", count);
 }
-
