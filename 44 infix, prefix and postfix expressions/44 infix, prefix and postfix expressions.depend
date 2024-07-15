@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1721018608 source:c:\abhisek\programming\dsa with c\44 infix, prefix and postfix expressions\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+
