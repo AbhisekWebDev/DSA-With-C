@@ -109,3 +109,11 @@ int main() {
 
     return 0;
 }
+
+
+
+// In graph theory, a connected component of an undirected graph is a subgraph
+// where any two vertices are connected to each other by paths,
+// and which is connected to no additional vertices in the rest of the graph.
+
+// To find the connected components of a graph, we can use Depth-First Search (DFS).
