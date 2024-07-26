@@ -118,3 +118,11 @@ int main() {
 
     return 0;
 }
+
+
+
+
+// Topological sorting is an ordering of the vertices in a directed acyclic graph (DAG) such that
+// for every directed edge u→v, vertex u comes before v.
+
+//It's commonly used in scenarios like task scheduling, where some tasks must be performed before others.
