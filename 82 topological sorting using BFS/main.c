@@ -130,3 +130,9 @@ int main() {
 
     return 0;
 }
+
+
+// Topological sorting can also be performed using Breadth-First Search (BFS).
+// This approach is known as Kahn's Algorithm.
+// It works by repeatedly removing nodes with no incoming edges (in-degree 0) from the graph,
+// and adding them to the topological order.
