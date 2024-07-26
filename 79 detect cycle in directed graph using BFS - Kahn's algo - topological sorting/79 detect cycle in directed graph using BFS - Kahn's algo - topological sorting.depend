@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1721970804 source:c:\abhisek\programming\dsa with c\79 detect cycle in directed graph using bfs - kahn's algo - topological sorting\main.c
+	<stdio.h>
+	<stdlib.h>
+

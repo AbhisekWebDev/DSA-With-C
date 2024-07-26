@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1721969999 source:c:\abhisek\programming\dsa with c\77 detect cycle in directed graph using dfs\main.c
+	<stdio.h>
+	<stdlib.h>
+
