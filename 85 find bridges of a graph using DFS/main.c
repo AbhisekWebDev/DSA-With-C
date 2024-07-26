@@ -130,3 +130,13 @@ int main() {
 
     return 0;
 }
+
+
+// In graph theory, a bridge (also known as a cut-edge) is an edge that, when removed,
+// increases the number of connected components of the graph.
+// Finding bridges in a graph is important for understanding its structure and vulnerability.
+
+// To find bridges, we use Depth-First Search (DFS) and keep track of discovery times of visited vertices
+// and the lowest points reachable from each vertex.
+
+// we use only DFS in this because BFS and topological search is very unusual and uncommon
