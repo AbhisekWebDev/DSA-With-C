@@ -119,7 +119,7 @@ int main() {
 }
 
 
-
+// The Bellman-Ford algorithm is primarily designed for directed graphs, so we wont use this algorithm for undirected graph
 
 
 // The Bellman-Ford algorithm is used for finding the shortest paths from a single source vertex to all other vertices
